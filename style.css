@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Alata";
+  src: url("./fonts/Alata-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("./fonts/JosefinSans-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --DarkGray: hsl(0, 0%, 55%);
+  --VeryDarkGray: hsl(0, 0%, 41%);
+  --fw_300: 300;
+  --fw_500: 500;
+  --size_xxs: 0.5rem;
+  --size_xs: 0.75rem;
+  --Font_size: 0.9375rem;
+  --size_base: 1rem;
+  --size_md: 1.25rem;
+  --size_lg: 1.5rem;
+  --size_xl: 1.75rem;
+  --size_xxl: 2rem;
+  --size_2xl: 2.25rem;
+  --size_3xl: 2.5rem;
+  --size_4xl: 2.75rem;
+  --size_5xl: 3rem;
+  --size_6xl: 3.5rem;
+  --size_7xl: 4rem;
+  --size_8xl: 4.5rem;
+  --size_9xl: 5rem;
+  --size_XXX: 6rem;
+  --ff_Alata: "Alata", sans-serif;
+  --ff_Josefin: "Josefin Sans", sans-serif;
+}
+
+body {
+  font-family: var(--ff_Josefin);
+}

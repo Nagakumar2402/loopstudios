@@ -1,0 +1,28 @@
+.mobile__menu {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Black);
+  position: absolute;
+  inset: 0;
+  padding: 2rem;
+  z-index: 9999;
+  display: none;
+  flex-direction: column;
+}
+.logo_container {
+  display: flex;
+  justify-content: space-between;
+}
+.mobile__nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 2rem;
+  justify-content: center;
+}
+.mobile__links {
+  color: aliceblue;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: var(--fw_300);
+}

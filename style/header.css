@@ -1,0 +1,160 @@
+header {
+  background: url(../images/mobile/image-hero.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 82vh;
+  color: var(--White);
+  position: relative;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.178);
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 888;
+}
+.logo {
+  width: 135px;
+}
+.logo img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.desktop__nav {
+  display: none;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.desktop__links {
+  color: var(--White);
+  position: relative;
+  cursor: pointer;
+  z-index: 99;
+  margin-left: 0.5rem;
+}
+.desktop__links::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  top: 20px;
+  background-color: var(--White);
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s, width 0.3s;
+}
+.desktop__links:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.hero_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  border: 2px solid var(--White);
+  width: 90%;
+}
+.hero_text h1 {
+  font-weight: var(--fw_300);
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    width: 100%;
+    padding: 3rem 2rem;
+  }
+  header {
+    background: url(../images/desktop/image-hero.jpg) no-repeat;
+    background-size: cover;
+    height: 50vh;
+    color: var(--White);
+    position: relative;
+  }
+  header::after {
+    height: 100%;
+  }
+
+  .logo {
+    width: 150px;
+  }
+  .desktop__nav {
+    display: flex;
+  }
+  .hamburger__menu {
+    display: none;
+  }
+  .hero_text {
+    width: 44%;
+    left: 26%;
+    top: 59%;
+  }
+  .hero_text h1 {
+    padding-inline: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 4rem 10rem;
+  }
+  header {
+    background: url(../images/desktop/image-hero.jpg) no-repeat;
+    height: 71vh;
+    color: var(--White);
+    position: relative;
+  }
+  header::after {
+    height: 95%;
+  }
+
+  .logo {
+    width: 192px;
+    height: 32px;
+  }
+  .desktop__nav {
+    display: flex;
+  }
+  .hamburger__menu {
+    display: none;
+  }
+  .hero_text {
+    width: 44%;
+    height: 17.5rem;
+    left: 33.2%;
+    top: 55.5%;
+    padding-block: 2rem;
+  }
+  .hero_text h1 {
+    font-size: 4.2rem;
+    padding-inline: 2.7rem;
+  }
+}
